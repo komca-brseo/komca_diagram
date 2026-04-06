@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" modified="2026-04-03T00:00:00.000Z" agent="draw.io" version="24.4.13" type="device">
+  <diagram name="전산실 랙 배치도" id="floorplan">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="전산실 랙 배치도 (평면도)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontStyle=1;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="150" y="20" width="500" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="전산실" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f4f8;strokeColor=#1a1a2e;strokeWidth=3;arcSize=3;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#1a1a2e;fontFamily=Malgun Gothic;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="80" y="90" width="640" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="출입문" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#64748b;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="370.0" y="605" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="" style="shape=mxgraph.floorplan.wall.doorDouble;fillColor=#ffffff;strokeColor=#1a1a2e;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375.0" y="595" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="랙 #1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#16213e;strokeWidth=2;fontSize=13;fontStyle=1;fontColor=#FFFFFF;verticalAlign=middle;align=center;fontFamily=Malgun Gothic;shadow=1;fillColor=#2563eb;" vertex="1" parent="1">
+          <mxGeometry x="130" y="160" width="110" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="(전면 →)" style="text;html=1;align=center;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#64748b;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="300" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="랙 #2" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#16213e;strokeWidth=2;fontSize=13;fontStyle=1;fontColor=#FFFFFF;verticalAlign=middle;align=center;fontFamily=Malgun Gothic;shadow=1;fillColor=#7c3aed;" vertex="1" parent="1">
+          <mxGeometry x="270" y="160" width="110" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="(전면 →)" style="text;html=1;align=center;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#64748b;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="270" y="300" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="랙 #3" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#16213e;strokeWidth=2;fontSize=13;fontStyle=1;fontColor=#FFFFFF;verticalAlign=middle;align=center;fontFamily=Malgun Gothic;shadow=1;fillColor=#0891b2;" vertex="1" parent="1">
+          <mxGeometry x="410" y="160" width="110" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="(전면 →)" style="text;html=1;align=center;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#64748b;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="410" y="300" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="랙 #4" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#16213e;strokeWidth=2;fontSize=13;fontStyle=1;fontColor=#FFFFFF;verticalAlign=middle;align=center;fontFamily=Malgun Gothic;shadow=1;fillColor=#059669;" vertex="1" parent="1">
+          <mxGeometry x="550" y="160" width="110" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="(전면 →)" style="text;html=1;align=center;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#64748b;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="550" y="300" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="━━━━━━━━━━  콜드 통로 (Cold Aisle)  ━━━━━━━━━━" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontStyle=2;fontColor=#94a3b8;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="325" width="540" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="랙 #5" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#16213e;strokeWidth=2;fontSize=13;fontStyle=1;fontColor=#FFFFFF;verticalAlign=middle;align=center;fontFamily=Malgun Gothic;shadow=1;fillColor=#d97706;" vertex="1" parent="1">
+          <mxGeometry x="200" y="375" width="110" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="(← 전면)" style="text;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#64748b;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="200" y="355" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="랙 #6" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#16213e;strokeWidth=2;fontSize=13;fontStyle=1;fontColor=#FFFFFF;verticalAlign=middle;align=center;fontFamily=Malgun Gothic;shadow=1;fillColor=#dc2626;" vertex="1" parent="1">
+          <mxGeometry x="340" y="375" width="110" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="(← 전면)" style="text;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#64748b;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="340" y="355" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="랙 #7" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#16213e;strokeWidth=2;fontSize=13;fontStyle=1;fontColor=#FFFFFF;verticalAlign=middle;align=center;fontFamily=Malgun Gothic;shadow=1;fillColor=#6366f1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="375" width="110" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="(← 전면)" style="text;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#64748b;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="480" y="355" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="━━━━━━━━━━  핫 통로 (Hot Aisle)  ━━━━━━━━━━" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontStyle=2;fontColor=#94a3b8;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="530" width="540" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="" style="shape=mxgraph.floorplan.appliances.air_conditioner;fillColor=#60a5fa;strokeColor=#2563eb;strokeWidth=1;html=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="120" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="항온항습기" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#64748b;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="625" y="150" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="UPS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#d97706;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#92400e;verticalAlign=middle;align=center;fontFamily=Malgun Gothic;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="530" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="<b>범례</b><br/>■ 랙 #1~#7: 서버 랙 (12슬롯)<br/>■ 콜드 통로: 냉기 유입 통로<br/>■ 핫 통로: 열기 배출 통로<br/>※ 작성일: ____년 __월 __일 | 담당자: ________" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#e2e8f0;strokeWidth=1;fontSize=10;fontColor=#475569;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="640" width="400" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="▲ N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#1a1a2e;fontStyle=1;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="670" y="650" width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

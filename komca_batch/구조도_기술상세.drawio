@@ -1,0 +1,202 @@
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- Title -->
+    <mxCell id="title" value="KOMCA 분배 배치 시스템 - 시스템 구조도" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a237e;" vertex="1" parent="1">
+      <mxGeometry x="400" y="20" width="800" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- ===== TRIGGER / ENTRY ZONE ===== -->
+    <mxCell id="zone_entry" value="실행 진입점" style="swimlane;startSize=30;fillColor=#e8eaf6;strokeColor=#3949ab;fontStyle=1;fontSize=12;fontColor=#1a237e;" vertex="1" parent="1">
+      <mxGeometry x="40" y="80" width="280" height="120" as="geometry" />
+    </mxCell>
+
+    <mxCell id="runJob" value="runJob.bat / runJob.sh&#xa;(sh/ 디렉토리)" style="rounded=1;whiteSpace=wrap;fillColor=#c5cae9;strokeColor=#3949ab;fontSize=11;" vertex="1" parent="zone_entry">
+      <mxGeometry x="20" y="40" width="180" height="50" as="geometry" />
+    </mxCell>
+
+    <mxCell id="param" value="YYYYMM 파라미터" style="ellipse;whiteSpace=wrap;fillColor=#9fa8da;strokeColor=#3949ab;fontSize=10;" vertex="1" parent="zone_entry">
+      <mxGeometry x="210" y="45" width="55" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- ===== APPLICATION LAYER ===== -->
+    <mxCell id="zone_app" value="애플리케이션 계층 (Java 1.8 + Spring 2.5)" style="swimlane;startSize=30;fillColor=#e8f5e9;strokeColor=#2e7d32;fontStyle=1;fontSize=12;fontColor=#1b5e20;" vertex="1" parent="1">
+      <mxGeometry x="40" y="240" width="960" height="540" as="geometry" />
+    </mxCell>
+
+    <!-- StartBatch -->
+    <mxCell id="startBatch" value="&lt;b&gt;StartBatch&lt;/b&gt;&#xa;komca.main.StartBatch&#xa;Spring Context 로드" style="rounded=1;whiteSpace=wrap;fillColor=#a5d6a7;strokeColor=#2e7d32;fontSize=11;" vertex="1" parent="zone_app">
+      <mxGeometry x="30" y="50" width="180" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Spring Context -->
+    <mxCell id="springCtx" value="Spring ApplicationContext&#xa;applicationContext.xml" style="rounded=1;whiteSpace=wrap;fillColor=#c8e6c9;strokeColor=#388e3c;fontSize=10;dashed=1;" vertex="1" parent="zone_app">
+      <mxGeometry x="240" y="50" width="180" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- DistrAction -->
+    <mxCell id="distrAction" value="&lt;b&gt;DistrAction&lt;/b&gt;&#xa;[Action 레이어]&#xa;getAction() / makeFtp()" style="rounded=1;whiteSpace=wrap;fillColor=#a5d6a7;strokeColor=#2e7d32;fontSize=11;" vertex="1" parent="zone_app">
+      <mxGeometry x="30" y="160" width="180" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- DistrServiceSpring -->
+    <mxCell id="distrService" value="&lt;b&gt;DistrServiceSpring&lt;/b&gt;&#xa;[Service 레이어]&#xa;execDistrProc() / getMbList()&#xa;getMdmEngNm() / getDistrDetail()&#xa;makeExcel() / createFtpAccount()" style="rounded=1;whiteSpace=wrap;fillColor=#a5d6a7;strokeColor=#2e7d32;fontSize=11;align=left;" vertex="1" parent="zone_app">
+      <mxGeometry x="280" y="140" width="220" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- DistrDetailDao -->
+    <mxCell id="distrDao" value="&lt;b&gt;DistrDetailDao&lt;/b&gt;&#xa;[DAO 레이어]&#xa;iBATIS SqlMapClientDaoSupport" style="rounded=1;whiteSpace=wrap;fillColor=#a5d6a7;strokeColor=#2e7d32;fontSize=11;" vertex="1" parent="zone_app">
+      <mxGeometry x="280" y="290" width="200" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- DistrDetail.xml -->
+    <mxCell id="sqlMap" value="&lt;b&gt;DistrDetail.xml&lt;/b&gt;&#xa;[SQL 매핑]&#xa;6개 SELECT + 1개 PROCEDURE" style="rounded=1;whiteSpace=wrap;fillColor=#dcedc8;strokeColor=#558b2f;fontSize=10;" vertex="1" parent="zone_app">
+      <mxGeometry x="280" y="400" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- ExcelUtils -->
+    <mxCell id="excelUtils" value="&lt;b&gt;ExcelUtils&lt;/b&gt;&#xa;[유틸]&#xa;셀 포맷 / 스타일 정의&#xa;(굴림 폰트, 천단위, 소수점)" style="rounded=1;whiteSpace=wrap;fillColor=#c8e6c9;strokeColor=#388e3c;fontSize=10;" vertex="1" parent="zone_app">
+      <mxGeometry x="560" y="140" width="180" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- FtpUtils -->
+    <mxCell id="ftpUtils" value="&lt;b&gt;FtpUtils&lt;/b&gt;&#xa;[유틸]&#xa;FtpPut() / FtpGet()&#xa;BINARY + Passive Mode" style="rounded=1;whiteSpace=wrap;fillColor=#c8e6c9;strokeColor=#388e3c;fontSize=10;" vertex="1" parent="zone_app">
+      <mxGeometry x="560" y="270" width="180" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- mdmCdList 매핑 -->
+    <mxCell id="mdmMapping" value="&lt;b&gt;mdmCdList[][]&lt;/b&gt;&#xa;매체코드 20종 × queryType 6개&#xa;2D 배열 매핑" style="rounded=1;whiteSpace=wrap;fillColor=#f1f8e9;strokeColor=#558b2f;fontSize=10;dashed=1;" vertex="1" parent="zone_app">
+      <mxGeometry x="560" y="400" width="180" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- xlsxTemplate -->
+    <mxCell id="xlsxTemplate" value="&lt;b&gt;xlsxTemplate/&lt;/b&gt;&#xa;distrList1~6.xlsx&#xa;(엑셀 출력 템플릿 6종)" style="shape=mxgraph.floorplan.fileStorage;whiteSpace=wrap;fillColor=#dcedc8;strokeColor=#558b2f;fontSize=10;" vertex="1" parent="zone_app">
+      <mxGeometry x="780" y="140" width="140" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- queryType 분류 박스 -->
+    <mxCell id="queryTypeBox" value="&lt;b&gt;분배 유형 (queryType)&lt;/b&gt;&#xa;1: 공연 (AA/AB/AC)&#xa;2: 복제/무대 (BA/BC...)&#xa;3: 방송 (DA~DK)&#xa;4: 외국입금 (Z)&#xa;5: 유원/유선공연 (EA/EB)&#xa;6: 전송 (FA~FE)" style="rounded=1;whiteSpace=wrap;fillColor=#f9fbe7;strokeColor=#827717;fontSize=10;align=left;" vertex="1" parent="zone_app">
+      <mxGeometry x="760" y="290" width="180" height="130" as="geometry" />
+    </mxCell>
+
+    <!-- 출력 XLS 파일 -->
+    <mxCell id="xlsOutput" value="&lt;b&gt;출력: .xls 파일&lt;/b&gt;&#xa;권리자별 분배금 명세서&#xa;시트당 최대 50,000행&#xa;(JXL 라이브러리)" style="shape=mxgraph.floorplan.fileStorage;whiteSpace=wrap;fillColor=#f0f4c3;strokeColor=#f57f17;fontSize=10;" vertex="1" parent="zone_app">
+      <mxGeometry x="560" y="460" width="160" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- ===== EXTERNAL SYSTEMS ===== -->
+    <!-- Oracle RDS -->
+    <mxCell id="oracleDB" value="&lt;b&gt;Oracle RDS (AWS)&lt;/b&gt;&#xa;FIDU 스키마&#xa;SP_DISTR_FOR_EXCEL()&#xa;kosmos-db01.*.rds.amazonaws.com" style="shape=cylinder3;whiteSpace=wrap;fillColor=#fff9c4;strokeColor=#f9a825;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1100" y="300" width="200" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- SERV-U FTP -->
+    <mxCell id="ftpServer" value="&lt;b&gt;SERV-U FTP 서버&lt;/b&gt;&#xa;192.168.244.218:21&#xa;권리자별 계정/디렉토리&#xa;자동 프로비저닝" style="shape=server;whiteSpace=wrap;fillColor=#ffe0b2;strokeColor=#e65100;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1100" y="500" width="200" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- Commons DBCP -->
+    <mxCell id="dbcp" value="Commons DBCP&#xa;커넥션 풀" style="ellipse;whiteSpace=wrap;fillColor=#fff9c4;strokeColor=#f9a825;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="1110" y="430" width="120" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- ===== ARROWS ===== -->
+    <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#3949ab;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontColor=#1a237e;" edge="1" source="runJob" target="startBatch" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e1_lbl" value="java -jar&#xa;YYYYMM" style="edgeLabel;fontSize=9;fillColor=none;strokeColor=none;" vertex="1" connectable="0" parent="e1">
+      <mxGeometry relative="0.5" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#388e3c;" edge="1" source="startBatch" target="springCtx" parent="zone_app">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e2_lbl" value="로드" style="edgeLabel;fontSize=9;fillColor=none;strokeColor=none;" vertex="1" connectable="0" parent="e2">
+      <mxGeometry relative="0.5" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#2e7d32;" edge="1" source="startBatch" target="distrAction" parent="zone_app">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#2e7d32;" edge="1" source="distrAction" target="distrService" parent="zone_app">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#2e7d32;" edge="1" source="distrService" target="distrDao" parent="zone_app">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#558b2f;" edge="1" source="distrDao" target="sqlMap" parent="zone_app">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#388e3c;" edge="1" source="distrService" target="excelUtils" parent="zone_app">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#388e3c;" edge="1" source="distrService" target="ftpUtils" parent="zone_app">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#558b2f;" edge="1" source="excelUtils" target="xlsxTemplate" parent="zone_app">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e9_lbl" value="템플릿 참조" style="edgeLabel;fontSize=9;fillColor=none;strokeColor=none;" vertex="1" connectable="0" parent="e9">
+      <mxGeometry relative="0.5" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#f57f17;" edge="1" source="excelUtils" target="xlsOutput" parent="zone_app">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e10_lbl" value="생성" style="edgeLabel;fontSize=9;fillColor=none;strokeColor=none;" vertex="1" connectable="0" parent="e10">
+      <mxGeometry relative="0.5" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#827717;" edge="1" source="distrService" target="mdmMapping" parent="zone_app">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#827717;" edge="1" source="mdmMapping" target="queryTypeBox" parent="zone_app">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#f9a825;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" source="sqlMap" target="oracleDB" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e13_lbl" value="SQL / PROCEDURE" style="edgeLabel;fontSize=9;fillColor=none;strokeColor=none;" vertex="1" connectable="0" parent="e13">
+      <mxGeometry relative="0.5" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#f9a825;" edge="1" source="oracleDB" target="dbcp" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#e65100;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" source="ftpUtils" target="ftpServer" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e15_lbl" value="계정 생성 / 파일 업로드" style="edgeLabel;fontSize=9;fillColor=none;strokeColor=none;" vertex="1" connectable="0" parent="e15">
+      <mxGeometry relative="0.5" as="geometry" />
+    </mxCell>
+
+    <!-- ===== LEGEND ===== -->
+    <mxCell id="legend" value="&lt;b&gt;범례&lt;/b&gt;" style="swimlane;startSize=25;fillColor=#f5f5f5;strokeColor=#616161;fontSize=11;fontColor=#333333;" vertex="1" parent="1">
+      <mxGeometry x="40" y="830" width="400" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="lg1" value="핵심 클래스" style="rounded=1;fillColor=#a5d6a7;strokeColor=#2e7d32;fontSize=10;" vertex="1" parent="legend">
+      <mxGeometry x="10" y="35" width="80" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="lg2" value="유틸 클래스" style="rounded=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontSize=10;" vertex="1" parent="legend">
+      <mxGeometry x="100" y="35" width="80" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="lg3" value="설정/리소스" style="rounded=1;fillColor=#dcedc8;strokeColor=#558b2f;fontSize=10;dashed=1;" vertex="1" parent="legend">
+      <mxGeometry x="190" y="35" width="80" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="lg4" value="외부 시스템" style="shape=cylinder3;fillColor=#fff9c4;strokeColor=#f9a825;fontSize=10;" vertex="1" parent="legend">
+      <mxGeometry x="280" y="30" width="80" height="40" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>
