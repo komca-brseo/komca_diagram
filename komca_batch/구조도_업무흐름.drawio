@@ -1,152 +1,127 @@
-<mxGraphModel dx="1422" dy="762" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="1">
-  <root>
-    <mxCell id="0" />
-    <mxCell id="1" parent="0" />
-
-    <!-- Title -->
-    <mxCell id="title" value="KOMCA 분배 배치 시스템 — 업무 흐름도" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#1a237e;" vertex="1" parent="1">
-      <mxGeometry x="80" y="30" width="1000" height="40" as="geometry" />
-    </mxCell>
-    <mxCell id="subtitle" value="매월 1회 실행 · 저작권 분배금 명세서 자동 생성 및 권리자 배포" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontColor=#555555;" vertex="1" parent="1">
-      <mxGeometry x="80" y="68" width="1000" height="25" as="geometry" />
-    </mxCell>
-
-    <!-- STEP 1: 실행 -->
-    <mxCell id="s1_bg" value="" style="rounded=1;fillColor=#e8eaf6;strokeColor=#3949ab;opacity=50;" vertex="1" parent="1">
-      <mxGeometry x="60" y="130" width="160" height="160" as="geometry" />
-    </mxCell>
-    <mxCell id="s1_icon" value="👤" style="text;html=1;align=center;fontSize=36;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-      <mxGeometry x="60" y="140" width="160" height="50" as="geometry" />
-    </mxCell>
-    <mxCell id="s1_title" value="&lt;b&gt;① 배치 실행&lt;/b&gt;" style="text;html=1;align=center;fontSize=13;fontColor=#1a237e;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
-      <mxGeometry x="60" y="195" width="160" height="25" as="geometry" />
-    </mxCell>
-    <mxCell id="s1_desc" value="운영 담당자가&#xa;정산 년월(YYYYMM)을&#xa;입력하여 배치 실행" style="text;html=1;align=center;fontSize=11;fontColor=#333333;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-      <mxGeometry x="60" y="220" width="160" height="60" as="geometry" />
-    </mxCell>
-
-    <!-- Arrow 1→2 -->
-    <mxCell id="a1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#3949ab;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" source="s1_bg" target="s2_bg" parent="1">
-      <mxGeometry relative="1" as="geometry" />
-    </mxCell>
-
-    <!-- STEP 2: 분배 데이터 준비 -->
-    <mxCell id="s2_bg" value="" style="rounded=1;fillColor=#e3f2fd;strokeColor=#1565c0;opacity=50;" vertex="1" parent="1">
-      <mxGeometry x="280" y="130" width="160" height="160" as="geometry" />
-    </mxCell>
-    <mxCell id="s2_icon" value="🗄️" style="text;html=1;align=center;fontSize=36;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-      <mxGeometry x="280" y="140" width="160" height="50" as="geometry" />
-    </mxCell>
-    <mxCell id="s2_title" value="&lt;b&gt;② 분배 데이터 준비&lt;/b&gt;" style="text;html=1;align=center;fontSize=13;fontColor=#1565c0;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
-      <mxGeometry x="280" y="195" width="160" height="25" as="geometry" />
-    </mxCell>
-    <mxCell id="s2_desc" value="데이터베이스에서&#xa;해당 월의 분배 대상&#xa;데이터를 자동 집계" style="text;html=1;align=center;fontSize=11;fontColor=#333333;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-      <mxGeometry x="280" y="220" width="160" height="60" as="geometry" />
-    </mxCell>
-
-    <!-- Arrow 2→3 -->
-    <mxCell id="a2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1565c0;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" source="s2_bg" target="s3_bg" parent="1">
-      <mxGeometry relative="1" as="geometry" />
-    </mxCell>
-
-    <!-- STEP 3: 권리자 목록 조회 -->
-    <mxCell id="s3_bg" value="" style="rounded=1;fillColor=#e8f5e9;strokeColor=#2e7d32;opacity=50;" vertex="1" parent="1">
-      <mxGeometry x="500" y="130" width="160" height="160" as="geometry" />
-    </mxCell>
-    <mxCell id="s3_icon" value="📋" style="text;html=1;align=center;fontSize=36;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-      <mxGeometry x="500" y="140" width="160" height="50" as="geometry" />
-    </mxCell>
-    <mxCell id="s3_title" value="&lt;b&gt;③ 권리자 목록 조회&lt;/b&gt;" style="text;html=1;align=center;fontSize=13;fontColor=#2e7d32;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
-      <mxGeometry x="500" y="195" width="160" height="25" as="geometry" />
-    </mxCell>
-    <mxCell id="s3_desc" value="분배 대상 권리자(저작권자)&#xa;전체 목록을&#xa;자동으로 불러옴" style="text;html=1;align=center;fontSize=11;fontColor=#333333;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-      <mxGeometry x="500" y="220" width="160" height="60" as="geometry" />
-    </mxCell>
-
-    <!-- Arrow 3→4 -->
-    <mxCell id="a3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#2e7d32;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" source="s3_bg" target="s4_bg" parent="1">
-      <mxGeometry relative="1" as="geometry" />
-    </mxCell>
-
-    <!-- STEP 4: 엑셀 명세서 생성 -->
-    <mxCell id="s4_bg" value="" style="rounded=1;fillColor=#fff8e1;strokeColor=#f57f17;opacity=50;" vertex="1" parent="1">
-      <mxGeometry x="720" y="130" width="160" height="160" as="geometry" />
-    </mxCell>
-    <mxCell id="s4_icon" value="📊" style="text;html=1;align=center;fontSize=36;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-      <mxGeometry x="720" y="140" width="160" height="50" as="geometry" />
-    </mxCell>
-    <mxCell id="s4_title" value="&lt;b&gt;④ 엑셀 명세서 생성&lt;/b&gt;" style="text;html=1;align=center;fontSize=13;fontColor=#e65100;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
-      <mxGeometry x="720" y="195" width="160" height="25" as="geometry" />
-    </mxCell>
-    <mxCell id="s4_desc" value="권리자별 · 매체 유형별&#xa;분배금 명세서를&#xa;엑셀 파일로 자동 생성" style="text;html=1;align=center;fontSize=11;fontColor=#333333;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-      <mxGeometry x="720" y="220" width="160" height="60" as="geometry" />
-    </mxCell>
-
-    <!-- Arrow 4→5 -->
-    <mxCell id="a4" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#f57f17;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" source="s4_bg" target="s5_bg" parent="1">
-      <mxGeometry relative="1" as="geometry" />
-    </mxCell>
-
-    <!-- STEP 5: FTP 배포 -->
-    <mxCell id="s5_bg" value="" style="rounded=1;fillColor=#fce4ec;strokeColor=#c62828;opacity=50;" vertex="1" parent="1">
-      <mxGeometry x="940" y="130" width="160" height="160" as="geometry" />
-    </mxCell>
-    <mxCell id="s5_icon" value="📤" style="text;html=1;align=center;fontSize=36;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-      <mxGeometry x="940" y="140" width="160" height="50" as="geometry" />
-    </mxCell>
-    <mxCell id="s5_title" value="&lt;b&gt;⑤ 권리자 FTP 배포&lt;/b&gt;" style="text;html=1;align=center;fontSize=13;fontColor=#c62828;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
-      <mxGeometry x="940" y="195" width="160" height="25" as="geometry" />
-    </mxCell>
-    <mxCell id="s5_desc" value="권리자별 전용 FTP 계정 생성&#xa;및 명세서 파일을&#xa;자동 업로드·배포" style="text;html=1;align=center;fontSize=11;fontColor=#333333;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-      <mxGeometry x="940" y="220" width="160" height="60" as="geometry" />
-    </mxCell>
-
-    <!-- ===== 매체 유형 박스 ===== -->
-    <mxCell id="media_bg" value="&lt;b&gt;분배 대상 매체 유형 (6종)&lt;/b&gt;" style="swimlane;startSize=30;fillColor=#f3e5f5;strokeColor=#7b1fa2;fontSize=12;fontColor=#4a148c;fontStyle=1;" vertex="1" parent="1">
-      <mxGeometry x="280" y="360" width="760" height="100" as="geometry" />
-    </mxCell>
-    <mxCell id="m1" value="🎤 공연" style="rounded=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontSize=12;" vertex="1" parent="media_bg">
-      <mxGeometry x="10" y="38" width="105" height="45" as="geometry" />
-    </mxCell>
-    <mxCell id="m2" value="💿 복제·무대" style="rounded=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontSize=12;" vertex="1" parent="media_bg">
-      <mxGeometry x="125" y="38" width="105" height="45" as="geometry" />
-    </mxCell>
-    <mxCell id="m3" value="📺 방송" style="rounded=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontSize=12;" vertex="1" parent="media_bg">
-      <mxGeometry x="240" y="38" width="105" height="45" as="geometry" />
-    </mxCell>
-    <mxCell id="m4" value="🌐 외국입금" style="rounded=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontSize=12;" vertex="1" parent="media_bg">
-      <mxGeometry x="355" y="38" width="105" height="45" as="geometry" />
-    </mxCell>
-    <mxCell id="m5" value="🎡 유원·유선공연" style="rounded=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontSize=12;" vertex="1" parent="media_bg">
-      <mxGeometry x="470" y="38" width="130" height="45" as="geometry" />
-    </mxCell>
-    <mxCell id="m6" value="📡 전송" style="rounded=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontSize=12;" vertex="1" parent="media_bg">
-      <mxGeometry x="610" y="38" width="105" height="45" as="geometry" />
-    </mxCell>
-
-    <!-- 화살표: 4번 → 매체박스 -->
-    <mxCell id="a_media" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#7b1fa2;strokeWidth=1.5;dashed=1;exitX=0.5;exitY=1;entryX=0.25;entryY=0;" edge="1" source="s4_bg" target="media_bg" parent="1">
-      <mxGeometry relative="1" as="geometry" />
-    </mxCell>
-    <mxCell id="a_media_lbl" value="매체별 명세서 분류" style="edgeLabel;fontSize=10;fillColor=none;strokeColor=none;fontColor=#7b1fa2;" vertex="1" connectable="0" parent="a_media">
-      <mxGeometry relative="0.5" as="geometry" />
-    </mxCell>
-
-    <!-- ===== 핵심 수치 박스 ===== -->
-    <mxCell id="kpi_bg" value="&lt;b&gt;주요 처리 규모&lt;/b&gt;" style="swimlane;startSize=30;fillColor=#e0f2f1;strokeColor=#00695c;fontSize=12;fontColor=#004d40;fontStyle=1;" vertex="1" parent="1">
-      <mxGeometry x="60" y="360" width="200" height="100" as="geometry" />
-    </mxCell>
-    <mxCell id="kpi1" value="📄 시트당 최대 50,000행" style="text;html=1;align=left;fontSize=11;fontColor=#004d40;strokeColor=none;fillColor=none;" vertex="1" parent="kpi_bg">
-      <mxGeometry x="10" y="35" width="180" height="25" as="geometry" />
-    </mxCell>
-    <mxCell id="kpi2" value="📁 매체 유형 6종 자동 분류" style="text;html=1;align=left;fontSize=11;fontColor=#004d40;strokeColor=none;fillColor=none;" vertex="1" parent="kpi_bg">
-      <mxGeometry x="10" y="60" width="180" height="25" as="geometry" />
-    </mxCell>
-
-    <!-- 실행 주기 -->
-    <mxCell id="cycle" value="🔄  월 1회 정기 실행" style="rounded=1;fillColor=#fffde7;strokeColor=#f9a825;fontSize=13;fontStyle=1;fontColor=#e65100;" vertex="1" parent="1">
-      <mxGeometry x="60" y="490" width="1040" height="45" as="geometry" />
-    </mxCell>
-
-  </root>
-</mxGraphModel>
+<mxfile host="Electron" modified="2026-04-06T01:46:59.473Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.13 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="MCwC9N0MkQPm_5wAOTbl" version="24.4.13" type="device">
+  <diagram id="FCdVa-tkO0XLj2kUMRVG" name="페이지-1">
+    <mxGraphModel dx="1111" dy="665" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="KOMCA 분배 배치 시스템 — 업무 흐름도" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#1a237e;" parent="1" vertex="1">
+          <mxGeometry x="80" y="30" width="1000" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="매월 1회 실행 · 저작권 분배금 명세서 자동 생성 및 권리자 배포" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontColor=#555555;" parent="1" vertex="1">
+          <mxGeometry x="80" y="68" width="1000" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_bg" value="" style="rounded=1;fillColor=#e8eaf6;strokeColor=#3949ab;opacity=50;" parent="1" vertex="1">
+          <mxGeometry x="60" y="130" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_icon" value="👤" style="text;html=1;align=center;fontSize=36;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="60" y="139" width="160" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_title" value="&lt;b&gt;① 배치 실행&lt;/b&gt;" style="text;html=1;align=center;fontSize=13;fontColor=#1a237e;strokeColor=none;fillColor=none;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="195" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_desc" value="운영 담당자가&#xa;정산 년월(YYYYMM)을&#xa;입력하여 배치 실행" style="text;html=1;align=center;fontSize=11;fontColor=#333333;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="60" y="220" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#3949ab;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="s1_bg" target="s2_bg" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_bg" value="" style="rounded=1;fillColor=#e3f2fd;strokeColor=#1565c0;opacity=50;" parent="1" vertex="1">
+          <mxGeometry x="280" y="130" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_icon" value="🗄️" style="text;html=1;align=center;fontSize=36;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="280" y="140" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_title" value="&lt;b&gt;② 분배 데이터 준비&lt;/b&gt;" style="text;html=1;align=center;fontSize=13;fontColor=#1565c0;strokeColor=none;fillColor=none;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="195" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_desc" value="데이터베이스에서&#xa;해당 월의 분배 대상&#xa;데이터를 자동 집계" style="text;html=1;align=center;fontSize=11;fontColor=#333333;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="280" y="220" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#1565c0;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="s2_bg" target="s3_bg" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_bg" value="" style="rounded=1;fillColor=#e8f5e9;strokeColor=#2e7d32;opacity=50;" parent="1" vertex="1">
+          <mxGeometry x="500" y="130" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_icon" value="📋" style="text;html=1;align=center;fontSize=36;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="500" y="140" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_title" value="&lt;b&gt;③ 권리자 목록 조회&lt;/b&gt;" style="text;html=1;align=center;fontSize=13;fontColor=#2e7d32;strokeColor=none;fillColor=none;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="195" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_desc" value="분배 대상 권리자(저작권자)&#xa;전체 목록을&#xa;자동으로 불러옴" style="text;html=1;align=center;fontSize=11;fontColor=#333333;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="500" y="220" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#2e7d32;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="s3_bg" target="s4_bg" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_bg" value="" style="rounded=1;fillColor=#fff8e1;strokeColor=#f57f17;opacity=50;" parent="1" vertex="1">
+          <mxGeometry x="720" y="130" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_icon" value="📊" style="text;html=1;align=center;fontSize=36;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="720" y="140" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_title" value="&lt;b&gt;④ 엑셀 명세서 생성&lt;/b&gt;" style="text;html=1;align=center;fontSize=13;fontColor=#e65100;strokeColor=none;fillColor=none;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="720" y="195" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_desc" value="권리자별 · 매체 유형별&#xa;분배금 명세서를&#xa;엑셀 파일로 자동 생성" style="text;html=1;align=center;fontSize=11;fontColor=#333333;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="720" y="220" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#f57f17;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="s4_bg" target="s5_bg" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s5_bg" value="" style="rounded=1;fillColor=#fce4ec;strokeColor=#c62828;opacity=50;" parent="1" vertex="1">
+          <mxGeometry x="940" y="130" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="s5_icon" value="📤" style="text;html=1;align=center;fontSize=36;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="940" y="140" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s5_title" value="&lt;b&gt;⑤ 권리자 FTP 배포&lt;/b&gt;" style="text;html=1;align=center;fontSize=13;fontColor=#c62828;strokeColor=none;fillColor=none;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="940" y="195" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="s5_desc" value="권리자별 전용 FTP 계정 생성&#xa;및 명세서 파일을&#xa;자동 업로드·배포" style="text;html=1;align=center;fontSize=11;fontColor=#333333;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="940" y="220" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="media_bg" value="&lt;b&gt;분배 대상 매체 유형 (6종)&lt;/b&gt;" style="swimlane;startSize=30;fillColor=#f3e5f5;strokeColor=#7b1fa2;fontSize=12;fontColor=#4a148c;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="360" width="760" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" value="🎤 공연" style="rounded=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontSize=12;" parent="media_bg" vertex="1">
+          <mxGeometry x="10" y="38" width="105" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="m2" value="💿 복제·무대" style="rounded=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontSize=12;" parent="media_bg" vertex="1">
+          <mxGeometry x="125" y="38" width="105" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="m3" value="📺 방송" style="rounded=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontSize=12;" parent="media_bg" vertex="1">
+          <mxGeometry x="240" y="38" width="105" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="m4" value="🌐 외국입금" style="rounded=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontSize=12;" parent="media_bg" vertex="1">
+          <mxGeometry x="355" y="38" width="105" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="m5" value="🎡 유원·유선공연" style="rounded=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontSize=12;" parent="media_bg" vertex="1">
+          <mxGeometry x="470" y="38" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="m6" value="📡 전송" style="rounded=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontSize=12;" parent="media_bg" vertex="1">
+          <mxGeometry x="610" y="38" width="105" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="a_media" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#7b1fa2;strokeWidth=1.5;dashed=1;exitX=0.5;exitY=1;entryX=0.25;entryY=0;" parent="1" source="s4_bg" target="media_bg" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_media_lbl" value="매체별 명세서 분류" style="edgeLabel;fontSize=10;fillColor=none;strokeColor=none;fontColor=#7b1fa2;" parent="a_media" vertex="1" connectable="0">
+          <mxGeometry relative="0.5" as="geometry" />
+        </mxCell>
+        <mxCell id="kpi_bg" value="&lt;b&gt;주요 처리 규모&lt;/b&gt;" style="swimlane;startSize=30;fillColor=#e0f2f1;strokeColor=#00695c;fontSize=12;fontColor=#004d40;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="360" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="kpi1" value="📄 시트당 최대 50,000행" style="text;html=1;align=left;fontSize=11;fontColor=#004d40;strokeColor=none;fillColor=none;" parent="kpi_bg" vertex="1">
+          <mxGeometry x="10" y="35" width="180" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="kpi2" value="📁 매체 유형 6종 자동 분류" style="text;html=1;align=left;fontSize=11;fontColor=#004d40;strokeColor=none;fillColor=none;" parent="kpi_bg" vertex="1">
+          <mxGeometry x="10" y="60" width="180" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="cycle" value="🔄  월 1회 정기 실행" style="rounded=1;fillColor=#fffde7;strokeColor=#f9a825;fontSize=13;fontStyle=1;fontColor=#e65100;" parent="1" vertex="1">
+          <mxGeometry x="60" y="490" width="1040" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

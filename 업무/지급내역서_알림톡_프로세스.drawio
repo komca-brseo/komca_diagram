@@ -1,0 +1,88 @@
+<mxfile host="Electron" modified="2026-04-23T01:15:36.533Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.13 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" version="24.4.13" etag="TE8H0WtX2eTcYeFPh9A9" type="device">
+  <diagram id="payment-notification-process" name="지급내역서 알림톡 프로세스">
+    <mxGraphModel dx="2230" dy="1338" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="650" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="지급내역서 알림톡 발송 프로세스" style="text;html=1;align=center;fontStyle=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry width="1700" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="phase1" value="지급일 전일 (D-1)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="110" y="40" width="920" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="phase2" value="지급일 당일 (D-Day)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="40" width="560" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="divider" value="" style="endArrow=none;dashed=1;strokeColor=#b85450;strokeWidth=2;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="80" as="sourcePoint" />
+            <mxPoint x="1040" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane1" value="회계팀" style="swimlane;horizontal=0;startSize=110;fillColor=#dae8fc;strokeColor=#6c8ebf;html=1;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry y="80" width="1700" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" value="① 회계마감&#xa;&lt;font color=&quot;#666&quot;&gt;(선행: 문제사항 해결)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="lane1" vertex="1">
+          <mxGeometry x="120" y="40" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="⑥ 딥링크 정상동작 확인&#xa;&lt;font color=&quot;#666&quot;&gt;(테스트 알림톡 수신)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="lane1" vertex="1">
+          <mxGeometry x="830" y="40" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="⑦ 홈페이지 마감&#xa;&lt;font color=&quot;#666&quot;&gt;(당월 지급내역서 오픈:&lt;br&gt;PC/모바일/앱)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="lane1" vertex="1">
+          <mxGeometry x="1080" y="40" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="⑧ 지급내역서 이메일 발송&#xa;→ &lt;b&gt;알림톡 실제 발송&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" parent="lane1" vertex="1">
+          <mxGeometry x="1330" y="40" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lane2" value="시스템" style="swimlane;horizontal=0;startSize=110;fillColor=#f5f5f5;strokeColor=#999999;html=1;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry y="230" width="1700" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" value="② 알림톡 임시데이터 생성&#xa;&lt;font color=&quot;#b85450&quot;&gt;※ 이 시점엔 앱 딥링크 없음&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;dashed=1;" parent="lane2" vertex="1">
+          <mxGeometry x="320" y="30" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lane3" value="전산팀" style="swimlane;horizontal=0;startSize=110;fillColor=#ffe6cc;strokeColor=#d79b00;html=1;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry y="360" width="1700" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="③ 링크 UPDATE 실행&#xa;&lt;b&gt;repo/지급내역서/pipeline.py&lt;/b&gt;&#xa;&lt;font color=&quot;#b85450&quot;&gt;⏱ 약 2~3시간 소요&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="lane3" vertex="1">
+          <mxGeometry x="330" y="50" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="④ 오류 내용 재실행 확인" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="lane3" vertex="1">
+          <mxGeometry x="605" y="55" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="⑤ 테스트 계정으로&#xa;알림톡 발송&#xa;&lt;font color=&quot;#666&quot;&gt;(배성진, 장혜진)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" parent="lane3" vertex="1">
+          <mxGeometry x="790" y="50" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" parent="1" source="n1" target="n2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="자동" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;" parent="1" source="n2" target="n3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" parent="1" source="n3" target="n4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" parent="1" source="n4" target="n5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" parent="1" source="n5" target="n6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="익일" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;strokeColor=#b85450;fontSize=10;fontColor=#b85450;fontStyle=1;" parent="1" source="n6" target="n7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" parent="1" source="n7" target="n8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note2" value="📱 &lt;b&gt;앱 딥링크 동작&lt;/b&gt;&#xa;• 앱 설치 기기 → 앱 내 지급내역서 페이지로 이동&#xa;• 미설치 기기 → 모바일홈페이지 생년월일 인증 후 지급내역서 확인" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f3ff;strokeColor=#6c8ebf;align=left;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="320" y="550" width="500" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="note3" value="📌 &lt;b&gt;배경&lt;/b&gt;&#xa;기존 FCM Dynamic Links 서비스 종료 →&#xa;야근몬스터(어플업체) 통해 대체" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;align=left;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="840" y="550" width="320" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="note4" value="✅ &lt;b&gt;필수 체크포인트(전산)&lt;/b&gt;&lt;br&gt;① pipeline.py 실행 후 오류 재확인&lt;br&gt;② 회계담당자에게 반드시 테스트 발송" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#b85450;align=left;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="1180" y="550" width="380" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

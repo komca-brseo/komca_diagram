@@ -1,0 +1,131 @@
+<mxfile host="Electron" modified="2026-04-23T04:32:18.034Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.13 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="SjCLUotFbyQfQIhicmP7" version="24.4.13" type="device">
+  <diagram name="페이지-1" id="uYghNMX6ZeDYFDTlsz-g">
+    <mxGraphModel dx="1312" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-1" value="&lt;b&gt;EMS 서버 전체 재시작 절차&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="140" y="20" width="500" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-2" value="&lt;b&gt;START&lt;/b&gt;&#xa;(재시작 필요 발생)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;arcSize=50;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="70" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-3" value="&lt;b&gt;사전 확인&lt;/b&gt;&#xa;mqueue 디렉토리 잔여 큐 확인&#xa;발송 로그 현황 확인" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="255" y="155" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-4" value="&lt;b&gt;발송 진행 중?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="280" y="250" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-5" value="&lt;b&gt;발송 완료 대기&lt;/b&gt;&#xa;또는 강제 종료 여부 판단" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="560" y="255" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-6" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#b85450;strokeWidth=2;dashed=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="200" y="340" width="360" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-7" value="&lt;b&gt;🔴 정지 순서&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="200" y="354" width="360" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-8" value="① Apache 정지&#xa;apachectl stop" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="230" y="385" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-9" value="② Tomcat 정지&#xa;catalina.sh stop" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="230" y="435" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-10" value="③ 대량메일 엔진 정지&#xa;run.sh stop → log.sh stop" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="230" y="485" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-11" value="④ 자동메일 엔진 정지&#xa;run.sh stop → log.sh stop" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="230" y="535" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-12" value="⑤ 추적 엔진(Mars) 정지&#xa;mars_tr.sh stop" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="230" y="585" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-13" value="&lt;b&gt;유지보수 작업 수행&lt;/b&gt;&#xa;(패치 적용 / DB 작업 / 서버 재부팅 등)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="639" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-14" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#82b366;strokeWidth=2;dashed=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="200" y="700" width="360" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-15" value="&lt;b&gt;🟢 시작 순서&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#006600;" vertex="1" parent="1">
+          <mxGeometry x="200" y="704" width="360" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-16" value="① 추적 엔진(Mars) 시작&#xa;mars_tr.sh start" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="230" y="733" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-17" value="② 자동메일 엔진 시작&#xa;log.sh start → run.sh start" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="230" y="783" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-18" value="③ 대량메일 엔진 시작&#xa;log.sh start → run.sh start" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="230" y="833" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-19" value="④ Tomcat 시작&#xa;catalina.sh start" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="230" y="883" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-20" value="⑤ Apache 시작&#xa;apachectl start" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="230" y="933" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-21" value="&lt;b&gt;프로세스 확인&lt;/b&gt;&#xa;ps -ef | grep EMS  (5개 확인)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="255" y="975" width="250" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-22" value="&lt;b&gt;END&lt;/b&gt;&#xa;(정상 운영 재개)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;arcSize=50;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1065" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-23" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-2" target="ZoBWXpeLHc42-QmqDJfw-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-24" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-3" target="ZoBWXpeLHc42-QmqDJfw-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-25" value="YES" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=11;fontStyle=1;fontColor=#b85450;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-4" target="ZoBWXpeLHc42-QmqDJfw-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-26" value="재확인" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-5" target="ZoBWXpeLHc42-QmqDJfw-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="185" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-27" value="NO" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=11;fontStyle=1;fontColor=#006600;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-4" target="ZoBWXpeLHc42-QmqDJfw-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-28" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-8" target="ZoBWXpeLHc42-QmqDJfw-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-29" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-9" target="ZoBWXpeLHc42-QmqDJfw-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-30" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-10" target="ZoBWXpeLHc42-QmqDJfw-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-31" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-11" target="ZoBWXpeLHc42-QmqDJfw-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-32" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-12" target="ZoBWXpeLHc42-QmqDJfw-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-33" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-13" target="ZoBWXpeLHc42-QmqDJfw-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-34" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-16" target="ZoBWXpeLHc42-QmqDJfw-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-35" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-17" target="ZoBWXpeLHc42-QmqDJfw-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-36" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-18" target="ZoBWXpeLHc42-QmqDJfw-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-37" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-19" target="ZoBWXpeLHc42-QmqDJfw-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-38" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-20" target="ZoBWXpeLHc42-QmqDJfw-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZoBWXpeLHc42-QmqDJfw-39" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="ZoBWXpeLHc42-QmqDJfw-21" target="ZoBWXpeLHc42-QmqDJfw-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

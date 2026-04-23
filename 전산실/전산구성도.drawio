@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2026-04-06T01:34:59.422Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.13 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="4fZ6Jeb87TdaDxU_Deut" version="24.4.13" type="device" pages="4">
+<mxfile host="Electron" modified="2026-04-06T01:47:20.529Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.13 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="UiWmTN4h3wI4e5mKAc1Q" version="24.4.13" type="device" pages="4">
   <diagram id="mRxrRISWQsOvicATwA5j" name="랙 실장도">
     <mxGraphModel dx="1107" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,7 +8,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="전산실 구성도" id="ogbGjBVk_6toW6ySCvcG">
-    <mxGraphModel dx="2420" dy="956" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3605" dy="1663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />

@@ -1,0 +1,136 @@
+<mxfile host="app.diagrams.net" modified="2026-04-03T00:00:00.000Z" agent="draw.io" version="24.4.13" type="device">
+  <diagram name="랙 #1 실장도" id="rack1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="583" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="랙 #1 실장도" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="20" width="420" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1a1a2e;strokeWidth=3;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="75" y="75" width="430" height="504" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="슬롯" style="shape=mxgraph.basic.rect;fillColor=#1a1a2e;fontColor=#FFFFFF;strokeColor=#16213e;fontSize=12;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="장비명" style="shape=mxgraph.basic.rect;fillColor=#1a1a2e;fontColor=#FFFFFF;strokeColor=#16213e;fontSize=12;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="80" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="IP 주소" style="shape=mxgraph.basic.rect;fillColor=#1a1a2e;fontColor=#FFFFFF;strokeColor=#16213e;fontSize=12;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="350" y="80" width="150" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="12" style="shape=mxgraph.basic.rect;fillColor=#e2e8f0;fontColor=#1a1a2e;strokeColor=#94a3b8;fontSize=11;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="118" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="UPS" style="shape=mxgraph.basic.rect;fillColor=#f8fafc;fontColor=#334155;strokeColor=#94a3b8;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="118" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="-" style="shape=mxgraph.basic.rect;fillColor=#f8fafc;fontColor=#334155;strokeColor=#94a3b8;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="350" y="118" width="150" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="11" style="shape=mxgraph.basic.rect;fillColor=#e2e8f0;fontColor=#1a1a2e;strokeColor=#94a3b8;fontSize=11;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="156" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="패치패널" style="shape=mxgraph.basic.rect;fillColor=#ffffff;fontColor=#334155;strokeColor=#94a3b8;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="156" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="-" style="shape=mxgraph.basic.rect;fillColor=#ffffff;fontColor=#334155;strokeColor=#94a3b8;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="350" y="156" width="150" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="10" style="shape=mxgraph.basic.rect;fillColor=#e2e8f0;fontColor=#1a1a2e;strokeColor=#94a3b8;fontSize=11;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="194" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="L2 스위치" style="shape=mxgraph.basic.rect;fillColor=#f8fafc;fontColor=#334155;strokeColor=#94a3b8;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="194" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="192.168.1.10" style="shape=mxgraph.basic.rect;fillColor=#f8fafc;fontColor=#334155;strokeColor=#94a3b8;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="350" y="194" width="150" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="9" style="shape=mxgraph.basic.rect;fillColor=#e2e8f0;fontColor=#1a1a2e;strokeColor=#94a3b8;fontSize=11;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="232" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="방화벽" style="shape=mxgraph.basic.rect;fillColor=#ffffff;fontColor=#334155;strokeColor=#94a3b8;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="232" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="192.168.1.1" style="shape=mxgraph.basic.rect;fillColor=#ffffff;fontColor=#334155;strokeColor=#94a3b8;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="350" y="232" width="150" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="8" style="shape=mxgraph.basic.rect;fillColor=#e2e8f0;fontColor=#1a1a2e;strokeColor=#94a3b8;fontSize=11;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="270" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="(장비명 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="270" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="(IP 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="350" y="270" width="150" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="7" style="shape=mxgraph.basic.rect;fillColor=#e2e8f0;fontColor=#1a1a2e;strokeColor=#94a3b8;fontSize=11;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="308" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="(장비명 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="308" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="(IP 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="350" y="308" width="150" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="6" style="shape=mxgraph.basic.rect;fillColor=#e2e8f0;fontColor=#1a1a2e;strokeColor=#94a3b8;fontSize=11;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="346" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="(장비명 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="346" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="(IP 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="350" y="346" width="150" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="28" value="5" style="shape=mxgraph.basic.rect;fillColor=#e2e8f0;fontColor=#1a1a2e;strokeColor=#94a3b8;fontSize=11;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="384" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="(장비명 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="384" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="(IP 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="350" y="384" width="150" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="4" style="shape=mxgraph.basic.rect;fillColor=#e2e8f0;fontColor=#1a1a2e;strokeColor=#94a3b8;fontSize=11;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="422" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="(장비명 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="422" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="(IP 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="350" y="422" width="150" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="3" style="shape=mxgraph.basic.rect;fillColor=#e2e8f0;fontColor=#1a1a2e;strokeColor=#94a3b8;fontSize=11;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="460" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="(장비명 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="460" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="36" value="(IP 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="350" y="460" width="150" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="37" value="2" style="shape=mxgraph.basic.rect;fillColor=#e2e8f0;fontColor=#1a1a2e;strokeColor=#94a3b8;fontSize=11;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="498" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="38" value="(장비명 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="498" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="39" value="(IP 입력)" style="shape=mxgraph.basic.rect;fillColor=#f1f5f9;fontColor=#94a3b8;strokeColor=#cbd5e1;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=2;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="350" y="498" width="150" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="1" style="shape=mxgraph.basic.rect;fillColor=#e2e8f0;fontColor=#1a1a2e;strokeColor=#94a3b8;fontSize=11;fontStyle=1;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="536" width="50" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="PDU" style="shape=mxgraph.basic.rect;fillColor=#ffffff;fontColor=#334155;strokeColor=#94a3b8;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="130" y="536" width="220" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="42" value="-" style="shape=mxgraph.basic.rect;fillColor=#ffffff;fontColor=#334155;strokeColor=#94a3b8;fontSize=11;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="350" y="536" width="150" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="※ 작성일: ____년 __월 __일  |  담당자: ________  |  위치: 전산실 랙 #1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#64748b;fontFamily=Malgun Gothic;" vertex="1" parent="1">
+          <mxGeometry x="80" y="599" width="420" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

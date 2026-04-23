@@ -1,0 +1,115 @@
+<mxfile host="Electron" modified="2026-04-23T04:32:48.484Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.13 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" version="24.4.13" etag="NGGOknVN6BvG5Ja1gSJI" type="device">
+  <diagram id="ems_architecture" name="EMS 시스템 아키텍처">
+    <mxGraphModel dx="1593" dy="956" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="legend_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;dashed=1;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="690" y="170" width="200" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_title" value="&lt;b&gt;범례&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="690" y="175" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_web" value="웹/애플리케이션 계층" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="710" y="205" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_engine" value="EMS 엔진" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="710" y="240" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_db" value="데이터베이스" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="710" y="275" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_ext" value="외부 시스템" style="shape=cloud;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="710" y="310" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" value="&lt;b&gt;관리자&lt;/b&gt;&#xa;(웹 브라우저)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="480" y="40" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="internet" value="&lt;b&gt;인터넷&lt;/b&gt;&#xa;(외부 수신자 메일 서버)" style="shape=cloud;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="760" y="700" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="dns" value="&lt;b&gt;외부 DNS 서버&lt;/b&gt;&#xa;Port 53 (UDP/TCP)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="60" y="750" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="server_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f9f9f9;strokeColor=#555555;strokeWidth=2;dashed=0;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="60" y="140" width="560" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="server_title" value="&lt;b&gt;EMS 서버  (ems.komca.or.kr  | 3.34.29.86 |  Linux Fedora 8)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="60" y="145" width="560" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="apache" value="&lt;b&gt;Apache HTTP Server&lt;/b&gt;&#xa;Port: 80, 88, 8887 (관리 콘솔)&#xa;경로: /amail/app/apache2/bin/apachectl" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="160" y="185" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tomcat" value="&lt;b&gt;Tomcat 5.0.28&lt;/b&gt;&#xa;Port: 8080, 8888&#xa;경로: /amail/app/tomcat5/bin/catalina.sh" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="160" y="305" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jupiter" value="&lt;b&gt;대량메일 엔진&lt;/b&gt;&#xa;EMSJupiterUpdate&#xa;EMSJupiterSend&#xa;/ems52/jupiter/bin/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="80" y="430" width="155" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="auto_engine" value="&lt;b&gt;자동메일 엔진&lt;/b&gt;&#xa;EMSJupiterAutoUpdate&#xa;EMSJupiterAutoSend&#xa;/ems52/auto/bin/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="272" y="430" width="155" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mars" value="&lt;b&gt;추적 엔진&lt;/b&gt;&#xa;EMSMarsTracking&#xa;오픈율·클릭 수집&#xa;/ems52/mars/bin/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="464" y="430" width="136" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="oracle" value="&lt;b&gt;Oracle Database&lt;/b&gt;&#xa;계정: AMAIL&#xa;EMS_MAILQUEUE (발송 큐)&#xa;AUTO_*, EBAD* (이력)" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="214.5" y="580" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="HTTP 8887" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;fontColor=#333333;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="admin" target="apache" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="리버스 프록시" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;" parent="1" source="apache" target="tomcat" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="tomcat" target="jupiter" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="tomcat" target="auto_engine" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="tomcat" target="mars" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="JDBC" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;" parent="1" source="jupiter" target="oracle" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="JDBC" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;" parent="1" source="auto_engine" target="oracle" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="JDBC" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;" parent="1" source="mars" target="oracle" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="SMTP 발송&#xa;Port 25" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="jupiter" target="internet" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" value="SMTP 발송&#xa;Port 25" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;dashed=1;" parent="1" source="auto_engine" target="internet" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" value="DNS 조회&#xa;Port 53" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="jupiter" target="dns" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="780" />
+              <mxPoint x="150" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" value="오픈/클릭 추적&#xa;Port 80/88" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;dashed=1;endArrow=open;startArrow=none;" parent="1" source="internet" target="mars" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="780" />
+            </Array>
+            <mxPoint x="730" y="760" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
